@@ -1,5 +1,11 @@
 $(document).ready(function(){
-	$('.header').slideDown(800);
-	$('.jumbotron').fadeIn(1400);
+
+	$('.header').ready(function(){
+		$('.header').slideDown(800);
+	});
+
+	$('#myPic').load(function(){
+		$('.jumbotron').fadeIn(1400);
+	});
 
 });
