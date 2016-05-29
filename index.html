@@ -31,8 +31,8 @@
 					<div class="me">
 						<p>&lt;head&gt;<img src="img/me.png" id="myPic" alt="A picture of me!">&lt;/head&gt;</p>
 					</div>
-					<p>Hi I'm Colin, a programmer, tech enthusiast and a student!</p>
-					<p>I am an Applied Computing undergraduate studying in Scotland and I love to mess around with code. I am currently building this website in my spare time and hosting it on my Raspberry Pi.</p>
+					<p>Hi I'm Colin, a programmer, tech enthusiast and Applied Computing graduate!</p>
+					<p>I am an Applied Computing graduate living in Scotland and I love to mess around with code. I am currently building this website in my spare time in between looking for software dev work.</p>
 					<p>Check out some other stuff I've been working on!</p>
 					<p><a id="projectsButtonGlyph"><span class="glyphicon glyphicon-chevron-down"></span></a></p>
 				</div>
@@ -40,22 +40,41 @@
 
 			<div class="projects" id="projects">
 				<div class="jumbotron">
+					<a data-toggle="collapse" data-target="#terrainProject" href="#terrainProject">
+						<h2>Pseudorandom 3D Terrain Generation</h2>
+						<p>C++, OpenGL and libnoise<br>September 2015 - April 2016</p>
+						<p><span class="glyphicon glyphicon-chevron-down"></span></p>
+					</a>
+					<div id="terrainProject" class="collapse">
+						<p>
+							This project was a trial by fire into the depths of C++ and graphical programming using OpenGL. As part of my Honours project at the University of Dundee, I looked at implementing terrain diversity into a randomly generated 3D terrain. Randomly generated terrain can be great for
+							simulating a specific single type of terrain, but what if you want different types of terrain in the same terrain object? Specifically, I looked at generating naturally flat terrain and mountainous ridges using pseudorandom coherent noise in order to retain a natural looking structure,
+							 then combined them in a way that they are randomly placed into the 3D terrain in regions of random position and size. The final program is a proof of concept of implementing more than one terrain type into the same terrain using random generation, and paves the way for adding more and more different terrain types to create a truly diverse
+							randomly generated terrain!
+						</p>
+						<img src="img/terrain.png" id="terrainPic" alt="A screenshot of my terrain program">
+					</div>
 					<a data-toggle="collapse" data-target="#webProject" href="#webProject">
 						<h2>Personal Website</h2>
-						<p>HTML, CSS, Javascript (jQuery) and Bootstrap on a Pi<br>Started August 2015 - Ongoing</p>
+						<p>HTML, CSS, Javascript (jQuery) and Bootstrap<br>Started August 2015 - Ongoing</p>
 						<p><span class="glyphicon glyphicon-chevron-down"></span></p>
 					</a>
 					<div id="webProject" class="collapse">
-						<p>I started making this website for a few reasons. First off, I am tinkering with my Raspberry Pi and looked at hosting a website on my local network as a hobby project. I decided that I probably needed a portfolio website for others to check out what stuff I'm doing, but more importantly so I can keep track of what I'm doing and how I am presenting that info to other people. I was so impressed with the results that I looked into getting this site publicly available - but hosted on the Pi on an Apache 2 web server.</p>
+						<p>
+							I started making this website for a few reasons. First off, I was tinkering with my Raspberry Pi and looked at hosting a website on my local network as a hobby project. I decided that I probably needed a portfolio website for others to check out what stuff I'm doing, but more importantly so I can keep track of what I'm doing and how I am presenting that info to other people, plus . I was so impressed with the results that I looked into getting this site publicly available - but hosted on the Pi on an Apache 2 web server. With the introduction of jQuery and
+							fancy bootstrap elements the site became a bit cumbersome to load, so it's now hosted on my personal Digital Ocean droplet. I learned a lot of stuff about static web development and deployment, as well as the bother caused from trying to host on my home network which required
+							tinkering with my router and modem settings. I'm not ditching the Pi completely though, I'm a big fan of Pi projects and I'd love to work on a new interactive project hosted on it!
+						</p>
 					</div>
 				</div>
 			</div>
 
 			<div class="footer">
 					<p>Find me on these sites!</p>
-					<img class="pull-left" src="img/raspberry_pi_logo.png" alt="Raspberry Pi logo">
+					<!--<img class="pull-left" src="img/raspberry_pi_logo.png" alt="Raspberry Pi logo">-->
 					<a href="https://www.linkedin.com/in/cemackey"><img src="img/linkedin_icon.png" alt="My LinkedIn profile"></a>
 					<a href="https://github.com/ColinMish"><img src="img/Octocat.png" alt="My GitHub profile"></a>
+					<p>Something terrible happened on this site? Want to talk to me about my projects? Drop me an email at <a href="mailto: contact@colinmackey.co.uk?Subject=Hello!">contact@colinmackey.co.uk</a></p>
 			</div>
 		</div>
 
